@@ -19,7 +19,7 @@ export default function Home() {
     </header>
     <main>
         <div className="hero">
-            <Image
+            <img
                 src="/images/fondos/Foto7.webp"
                 alt="Mary Jhey"
                 className="heroimg"

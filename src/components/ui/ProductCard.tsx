@@ -17,7 +17,7 @@ export default function Card(){
            
             {rutacards.map((card, index) => (
                 <div key={index} className={style.productcard}>
-                    <Image 
+                    <img
                         className={style.productImage} 
                         width={350} 
                         height={350}    
