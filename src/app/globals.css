@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.hero {
+  overflow: hidden;
+  position: relative;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.heroimg {
+  
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  mask-image: linear-gradient(
+    black 90%,
+    transparent
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.herotext {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 500px;
+  color: #3B82F6;
+}
+
+.herotexth1 {
+  font-size: 90px;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.herotexth3 {
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1}
+}
+
+.titleproduct{
+  margin-top: 10px;
+  font-size: 5rem;  
+  font-weight: bold; 
+  color: black;
+  text-align: center;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+
+@media (max-width: 1024px) {
+  .heroimg {
+    height: 500px;
+  }
+
+  .herotext {
+    top: 15%;
+    left: 5%;
+    width: 400px;
+  }
+
+  .herotexth1 {
+    font-size: 70px;
+  }
+
+  .herotexth3 {
+    font-size: 18px;
+  }
+
+  .titleproduct {
+    font-size: 4rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .heroimg {
+    height: 400px;
+  }
+
+  .herotext {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .herotexth1 {
+    font-size: 500px;
+  }
+
+  .herotexth3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .titleproduct {
+    font-size: 3rem;
+  }
+}
+
+/* Para pantallas extra pequeñas (móviles compactos) */
+@media (max-width: 480px) {
+  .heroimg {
+    height: 300px;
+  }
+
+  .herotext {
+    top: 5%;
+    width: 100%;
+  }
+
+  .herotexth1 {
+    font-size: 50px;
+  }
+
+  .herotexth3 {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .titleproduct {
+    font-size: 2.5rem;
+  }
 }
