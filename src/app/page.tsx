@@ -1,6 +1,5 @@
 import Header from "@/components/layout/header"
 import Card from "@/components/ui/ProductCard"
-import Image from "next/image"
 import Wassap from "@/components/ui/buttonwassap"
 
 import "./globals.css"; 

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import style from "./card.module.css"
 
 const rutacards = [
