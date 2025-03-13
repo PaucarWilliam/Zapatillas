@@ -8,6 +8,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 .productImage {
     max-width: 100%;
     margin-top: 40px;
@@ -17,8 +18,8 @@
     object-fit: cover;
     display: inline-block;
     vertical-align: middle;         
-    width: 350px !important;
-    height: 350px !important;
+    width: 350px ;
+    height: 350px ;
     transition: transform 0.3s ease, box-shadow 0.3s ease ;
     
 }
@@ -96,8 +97,8 @@
 
 @media (max-width: 768px) {
   .productGrid {
-      flex-direction: column; /* En móviles, las cards se apilan */
-      align-items: center; /* Centra las cards */
+      flex-wrap:wrap; /* En móviles, las cards se apilan */
+      display: flex; /* Centra las cards */
   }
 }
 
@@ -105,10 +106,18 @@
   .productImage {
       width: 100%;
       max-width: 100%;
+      margin-top: 0px;  
       transition: transform 0.3s ease, box-shadow 0.3s ease ;
   }
   .productImage:hover{
     transform: translateY(-20px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width:768px){
+  .productcard{
+    flex: 1 1 40%;
+    padding: 7px;
   }
 }
