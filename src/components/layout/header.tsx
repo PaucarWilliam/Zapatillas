@@ -65,7 +65,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Inicio
                 </a>
@@ -73,7 +73,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Conócenos
                 </a>
@@ -81,7 +81,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
+                  className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Ofertas
                 </a>
