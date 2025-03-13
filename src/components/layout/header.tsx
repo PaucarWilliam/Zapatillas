@@ -15,14 +15,14 @@ export function Header() {
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
               Flowbite
             </span>
           </a>
           <div className="flex items-center lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center p-2 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700"
+              className="inline-flex items-center p-2 text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none text-gray-400 hover:bg-gray-700"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -65,7 +65,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Inicio
                 </a>
@@ -73,7 +73,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Conócenos
                 </a>
@@ -81,7 +81,7 @@ export function Header() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                  className="block py-2 px-3 text-gray-700 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-600 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Ofertas
                 </a>
