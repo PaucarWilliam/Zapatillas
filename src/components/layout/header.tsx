@@ -7,7 +7,7 @@ export function Header() {
 
   return (
     <header>
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-[#1E3A8A]">
+      <nav className=" border-gray-200 px-4 lg:px-6 py-4 bg-[#1E3A8A]">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="https://flowbite.com" className="flex items-center">
             <Image

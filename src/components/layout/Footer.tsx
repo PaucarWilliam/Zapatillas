@@ -3,7 +3,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 export default function Footer() {
     return (
-        <footer className="bg-white dark:bg-[#1E3A8A] py-6 px-4">
+        <footer className="bg-[#1E3A8A] py-6 px-4">
             <div className="mx-auto w-full max-w-screen-xl flex flex-col items-center">
                 <h1 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Redes Sociales</h1>
                 <div className="flex flex-row items-center gap-6">
@@ -20,3 +20,4 @@ export default function Footer() {
         </footer>
     );
 }
+ 
