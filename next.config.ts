@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  eslint: {
+  /*eslint: {
     ignoreDuringBuilds: true, // Ignora errores de ESLint durante la compilación
-  },
+  },*/
 };
 
 

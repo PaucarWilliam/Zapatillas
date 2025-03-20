@@ -1,6 +1,5 @@
 import Header from "@/components/layout/header"
 import Card from "@/components/ui/ProductCard"
-import Image from "next/image"
 import Wassap from "@/components/ui/buttonwassap"
 
 import "./globals.css"; 
@@ -19,12 +18,11 @@ export default function Home() {
     </header>
     <main>
         <div className="hero">
-            <Image
-                src="https://personalproyect2.github.io/Zapatillas/images/fondos/Foto7.webp"
+            <img
+                src="/images/fondos/Foto7.webp"
                 alt="Mary Jhey"
                 className="heroimg"
-                width={1980}
-                height={1080}/>
+                />
             <a className="herotext">
                 <h1 className="herotexth1">Mary Jhey</h1>
                 <h3 className="herotexth3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod omnis pariatur tempore.</h3>
