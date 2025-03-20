@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useState } from "react";
 
 export function Header() {
@@ -9,7 +10,7 @@ export function Header() {
       <nav className=" border-gray-200 px-4 lg:px-6 py-4 bg-[#1E3A8A]">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="https://flowbite.com" className="flex items-center">
-            <img
+            <Image
               src="https://flowbite.com/docs/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"

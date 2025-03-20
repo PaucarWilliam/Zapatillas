@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 import style from "./card.module.css"
 
 const rutacards = [
@@ -17,10 +17,14 @@ export default function Card(){
            
             {rutacards.map((card, index) => (
                 <div key={index} className={style.productcard}>
-                    <img
-                        className={style.productImage}   
+                    <Image
+                        className={style.productImage} 
+                        width={350} 
+                        height={350}    
+                        layout="fixed"
                         src={card.image} 
                         alt={card.name} 
+                        priority={true}
                     />
                     <h2 className={style.productcardh2}>{card.name}</h2>
                 </div>
