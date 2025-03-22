@@ -1,11 +1,13 @@
+"use client"
 import Header from "@/components/layout/header"
-import Card from "@/components/ui/ProductCard"
+import CardList from "@/components/ui/CardList"
 import Image from "next/image"
 import Wassap from "@/components/ui/buttonwassap"
 
 import "./globals.css"; 
 import Script from "next/script";
 import Footer from "@/components/layout/Footer";
+import rutacards from "@/components/ui/CardData";
 
 export default function Home() {
   return (
@@ -35,7 +37,7 @@ export default function Home() {
 
     <section>
         <h1 className="titleproduct" >Productos</h1>
-      <Card />
+      <CardList />
     </section>
 
     <Wassap />
@@ -46,3 +48,6 @@ export default function Home() {
   </div>
   );
 }
+
+
+console.log(rutacards);
