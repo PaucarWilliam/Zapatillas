@@ -11,7 +11,7 @@ import rutacards from "@/components/ui/CardData";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Script rel="stylesheet"
         src='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
         strategy='beforeInteractive'/>
@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       
     </header>
-    <main>
+    <main className="flex-grow">
         <div className="hero">
             <Image
                 src="/images/fondos/Foto7.webp"
@@ -33,13 +33,14 @@ export default function Home() {
             </a>              
         </div>  
 
+        <section>
+                <h1 className="titleproduct" >Productos</h1>
+                <CardList />
+        </section>
+
     </main>
 
-    <section>
-        <h1 className="titleproduct" >Productos</h1>
-      <CardList />
-    </section>
-
+   
     <Wassap />
     
     <footer>

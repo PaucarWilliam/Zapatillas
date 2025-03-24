@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export function Header() {
@@ -65,28 +66,28 @@ export function Header() {
           >
             <ul className="flex flex-col lg:flex-row text-[1.3rem] font-medium">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/novedades"
                   className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
-                  Conócenos
-                </a>
+                  Novedades
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/oferta"
                   className="block py-2 px-3 text-gray-200 hover:bg-gray-50 lg:hover:bg-transparent lg:hover:text-blue-100 text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Ofertas
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
